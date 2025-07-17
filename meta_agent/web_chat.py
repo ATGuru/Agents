@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 import threading
-from meta_agent.main import MetaAgent
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+from main import MetaAgent
 import os
 
 app = Flask(__name__)
