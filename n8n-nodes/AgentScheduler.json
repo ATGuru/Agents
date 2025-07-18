@@ -1,0 +1,31 @@
+{
+  "displayName": "Agent Scheduler",
+  "name": "agentScheduler",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with AgentScheduler class - schedules and manages automated agent execution",
+  "defaults": {
+    "name": "Agent Scheduler"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for AgentScheduler integration\n// AgentScheduler handles: scheduling and managing automated agent execution\n// Location: meta_agent/meta_agent/agent_scheduler.py\n\nreturn items.map(item => {\n  // TODO: Integrate with AgentScheduler class functionality\n  // - Schedule agents with cron-like timing\n  // - Manage scheduled jobs\n  // - Integration with AgentManager\n  // - Background thread management\n  \n  return {\n    json: {\n      ...item.json,\n      agentScheduler: {\n        status: 'placeholder',\n        message: 'AgentScheduler integration stub - ready for implementation',\n        features: ['cron scheduling', 'background execution', 'job management']\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}

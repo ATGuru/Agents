@@ -1,0 +1,31 @@
+{
+  "displayName": "Agent Manager",
+  "name": "agentManager",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with AgentManager class - manages agents: start, stop, status, logs, and scheduling",
+  "defaults": {
+    "name": "Agent Manager"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for AgentManager integration\n// AgentManager handles: start, stop, status, logs, and agent scheduling\n// Location: meta_agent/meta_agent/agent_manager.py\n\nreturn items.map(item => {\n  // TODO: Integrate with AgentManager class functionality\n  // - Agent lifecycle management (start/stop)\n  // - Agent status monitoring\n  // - Log management\n  // - Agent scheduling\n  \n  return {\n    json: {\n      ...item.json,\n      agentManager: {\n        status: 'placeholder',\n        message: 'AgentManager integration stub - ready for implementation'\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}
