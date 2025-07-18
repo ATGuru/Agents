@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Gunicorn WSGI server",
+      "type": "shell",
+      "command": ".venv/bin/gunicorn",
+      "args": [
+        "--workers", "3",
+        "--bind", "0.0.0.0:8000",
+        "agents.app:app"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run MetaAgent Web Chat (Gunicorn)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run_web_chat.sh"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

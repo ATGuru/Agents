@@ -1,4 +1,0 @@
-# Requirements for Meta-Agent
-openai
-schedule
-requests

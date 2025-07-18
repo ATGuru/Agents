@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve Agents Flask App
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/workspaces/Agents
+Environment="PATH=/workspaces/Agents/.venv/bin"
+ExecStart=/workspaces/Agents/.venv/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 agents.app:app
+
+[Install]
+WantedBy=multi-user.target
