@@ -1,0 +1,31 @@
+{
+  "displayName": "Chat Interface",
+  "name": "chatInterface",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with ChatInterface class - provides interactive chat interface for meta agent interaction",
+  "defaults": {
+    "name": "Chat Interface"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for ChatInterface integration\n// ChatInterface handles: interactive chat interface for meta agent interaction\n// Location: meta_agent/meta_agent/interface.py\n\nreturn items.map(item => {\n  // TODO: Integrate with ChatInterface class functionality\n  // - Handle user prompts\n  // - Interactive chat sessions\n  // - Meta agent communication\n  // - Command processing\n  \n  return {\n    json: {\n      ...item.json,\n      chatInterface: {\n        status: 'placeholder',\n        message: 'ChatInterface integration stub - ready for implementation',\n        features: ['interactive chat', 'prompt handling', 'meta agent integration']\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}

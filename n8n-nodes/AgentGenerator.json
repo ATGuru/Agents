@@ -1,0 +1,31 @@
+{
+  "displayName": "Agent Generator",
+  "name": "agentGenerator",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with AgentGenerator class - generates new agent code based on user prompts and selected tools",
+  "defaults": {
+    "name": "Agent Generator"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for AgentGenerator integration\n// AgentGenerator handles: generating new agent code based on prompts and tools\n// Location: meta_agent/meta_agent/agent_generator.py\n\nreturn items.map(item => {\n  // TODO: Integrate with AgentGenerator class functionality\n  // - Generate agents from prompts\n  // - Support multiple agent types (code_review, doc_generator, etc.)\n  // - Tool registry integration\n  // - Agent template creation\n  \n  return {\n    json: {\n      ...item.json,\n      agentGenerator: {\n        status: 'placeholder',\n        message: 'AgentGenerator integration stub - ready for implementation',\n        supportedTypes: ['code_review', 'doc_generator', 'data_analysis', 'web_scraper', 'task_reminder']\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}

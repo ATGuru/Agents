@@ -1,0 +1,31 @@
+{
+  "displayName": "Agent Templates",
+  "name": "agentTemplates",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with AgentTemplates class - provides reusable agent templates for quick agent creation",
+  "defaults": {
+    "name": "Agent Templates"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for AgentTemplates integration\n// AgentTemplates handles: reusable agent templates for quick agent creation\n// Location: meta_agent/meta_agent/agent_templates.py\n\nreturn items.map(item => {\n  // TODO: Integrate with AgentTemplates class functionality\n  // - List available templates\n  // - Create agents from templates\n  // - Template management\n  // - Template directory handling\n  \n  return {\n    json: {\n      ...item.json,\n      agentTemplates: {\n        status: 'placeholder',\n        message: 'AgentTemplates integration stub - ready for implementation',\n        templateDir: 'templates directory management'\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "displayName": "Scheduled Trigger",
+  "name": "scheduledTrigger",
+  "icon": "file:agent.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Generated placeholder for future n8n integration with ScheduledTrigger class - provides scheduled triggering of meta agent prompts and actions",
+  "defaults": {
+    "name": "Scheduled Trigger"
+  },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "credentials": [],
+  "properties": [
+    {
+      "displayName": "Function",
+      "name": "functionCode",
+      "type": "string",
+      "typeOptions": {
+        "alwaysOpenEditWindow": true,
+        "codeAutocomplete": "function",
+        "editor": "code",
+        "rows": 10
+      },
+      "default": "// This is a generated placeholder for ScheduledTrigger integration\n// ScheduledTrigger handles: scheduled triggering of meta agent prompts and actions\n// Location: meta_agent/meta_agent/interface.py\n\nreturn items.map(item => {\n  // TODO: Integrate with ScheduledTrigger class functionality\n  // - Schedule automated prompts\n  // - Time-based trigger execution\n  // - Meta agent integration\n  // - Background scheduling management\n  \n  return {\n    json: {\n      ...item.json,\n      scheduledTrigger: {\n        status: 'placeholder',\n        message: 'ScheduledTrigger integration stub - ready for implementation',\n        features: ['scheduled prompts', 'time-based triggers', 'background execution']\n      }\n    }\n  };\n});",
+      "description": "JavaScript code to execute. The input items are available as $items. More info can be found in the docs.",
+      "noDataExpression": true,
+      "required": true
+    }
+  ]
+}
