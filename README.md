@@ -39,7 +39,7 @@ The Meta-Agent can generate the following specialized agents:
 ## Getting Started
 
 1. Install dependencies: `pip install -r meta_agent/requirements.txt`
-2. Start the chatbot UI: `python meta_agent/web_chat.py` and open [http://localhost:5002/](http://localhost:5002/)
+2. Start the chatbot UI: `python3 meta_agent/web_chat.py` and open [http://localhost:5002/](http://localhost:5002/)
 3. Use the dashboard by typing `dashboard` in the chat, or manage agents via the API.
 
 ## Extending
